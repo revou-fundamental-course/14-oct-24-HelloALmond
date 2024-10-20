@@ -1,52 +1,106 @@
-/* - - - - Google-Font-Poppins - - - -  */
- @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* - -Google-Font-Poppins- - */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
- /* - - - - ini css untuk logo - - - - */
-.nav-logo-icon {
-    height: 2px;
-    width: 2px;
-    background-position: center;
-}
-
- /* - - - - Vatiabel warna - - - - */
-
-:root {
-
-    --body-color: rgb(250, 250, 250);
-    --color-white: rgb(255, 255, 255);
-
-    --text-color-second: rgb(68, 68, 68);
-    --text-color-third:rgb(30, 159, 171);
-
-    --first-color: rgb(110, 87, 224);
-    --first-color-hover:rgb(40, 91, 212);
-
-    --second-color:rgb(0, 201, 255);
-    --third-color: rgb(192, 166, 49);
-    --first-shadow-color: rgba(0, 0, 0, 0.1);
-  }
-
-/* - - - - Base - - - - */
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-
-}
-
-/* - - - - Skrolnya smooth - - - - */
-html {
-    scroll-behavior: smooth;
-  }
-
-
-
-/* change sb */
-/* width */
-::-webkit-scrollbar{
-    width: 25px;
-}
+/* - -Variant- - */
+:root{
+  /* - -Warna Utama- - */
+  --first-color: #0e2431;
+  --second-color: #6a59d1;
+  --third-color: #777;
   
- 
+  /* - -Warna Elemen- - */
+  --hover-color: #614fd0;
+
+  /* - -background-color- - */
+  --body-bg-color: #fefefe;
+  --card-bg-color: #fff;
+  --modal-bg-color: #fff;
+  --bg-transparant-color: rgba(0, 0, 0, 0.1);
+  --transparant-color-01: rgba(0, 0, 0, 0.1);
+  --transparant-color-02: rgba(106, 89, 209, 0.1);
+  --line-color: #d7d7d7;
+
+
+/* - -Filter Warna- - */
+ --color-filter: invert(1);
+
+ /* - -Box shadow- - */
+ --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
+
+ /* - -font size- - */
+ --small-font-size: 0.9em;
+ --normal-font-seze: 1em;
+
+ /* - -Scroll bar color- -  */
+ --scroll-bar-color: #c5cadf;
+ --scroll-thump-color: #70761a;
+ --scroll-thump-hover-color: #454f6b;
+}
+
+/* - -Base- - */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif
+}
+
+/* - -body- - */
+body{
+  color: var(--first-color);
+  background: var(--body-bg-color);
+  margin: 36px 0 0 0;
+  transition: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+li{
+  list-style: none;
+}
+
+/* - -Header- - */
+header{
+  z-index: 99999;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(20px);
+  transition: .6s ease;
+}
+
+.nav-bar{
+  position: relative;
+  height: cal(4rem + 1rem);
+  max-width: 1250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  transition:  .6s ease;
+}
+
+/* - -Bagian Logo- - */
+.logo-1 img{
+  height: 30px;
+  width: 30px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* - -Bagian Navigasi Yang Teks- - */
+.nav-item a{
+  color: var(--first-color);
+  font-size: var(--normal-font-seze);
+  font-weight: 500;
+  margin-right: 50px;
+}
+
+.nav-item a:hover {
+  color: var(--second-color);
+}

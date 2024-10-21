@@ -1,17 +1,19 @@
 /* - -Google-Font-Poppins- - */
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+
+
 /* - -Variant- - */
 :root{
-  /* - -Warna Utama- - */
+  /* - -MAIN THEME- - */
   --first-color: #0e2431;
   --second-color: #6a59d1;
   --third-color: #777;
   
-  /* - -Warna Elemen- - */
+  /* - -HAVER COLOR- - */
   --hover-color: #614fd0;
 
-  /* - -background-color- - */
+  /* - -BACKGROUND COLOR- - */
   --body-bg-color: #fefefe;
   --card-bg-color: #fff;
   --modal-bg-color: #fff;
@@ -21,23 +23,23 @@
   --line-color: #d7d7d7;
 
 
-/* - -Filter Warna- - */
+/* - -COLOR FILTER- - */
  --color-filter: invert(1);
 
- /* - -Box shadow- - */
+ /* - -SHADOW BOX- - */
  --box-shadow: 0px 0px 20px rgb(0 0 0 / 10%);
 
- /* - -font size- - */
+ /* - -FONT- - */
  --small-font-size: 0.9em;
  --normal-font-seze: 1em;
 
- /* - -Scroll bar color- -  */
+ /* - -SCROLL BAR COLOR- -  */
  --scroll-bar-color: #c5cadf;
  --scroll-thump-color: #70761a;
  --scroll-thump-hover-color: #454f6b;
 }
 
-/* - -Base- - */
+/* - -BASE- - */
 *{
   margin: 0;
   padding: 0;
@@ -45,13 +47,20 @@
   font-family: 'Poppins', sans-serif
 }
 
-/* - -body- - */
+
+/* - -SMOOTH SCROLL- - */
+html{
+  scroll-behavior: smooth;
+}
+
+/* - -BODY- - */
 body{
   color: var(--first-color);
   background: var(--body-bg-color);
-  margin: 36px 0 0 0;
-  transition: none;
+  margin: 2rem 0 0 0;
+  transition: .5s ease;
 }
+
 
 a{
   text-decoration: none;
@@ -60,6 +69,7 @@ a{
 li{
   list-style: none;
 }
+
 
 /* - -Header- - */
 header{
@@ -72,9 +82,9 @@ header{
   transition: .6s ease;
 }
 
-.nav-bar{
-  position: relative;
-  height: cal(4rem + 1rem);
+.navigation-bar .container{
+  position:relative;
+  height: calc(4rem + 1rem);
   max-width: 1250px;
   display: flex;
   justify-content: space-between;
@@ -85,22 +95,86 @@ header{
   transition:  .6s ease;
 }
 
-/* - -Bagian Logo- - */
-.logo-1 img{
+/* - -Logo- - */
+.navigation-bar .logo-1 img{
   height: 30px;
   width: 30px;
   background-size: cover;
   background-position: center;
 }
 
-/* - -Bagian Navigasi Yang Teks- - */
-.nav-item a{
+/* - -NAV ITEM- - */
+.navigation-bar .nav-item a{
   color: var(--first-color);
   font-size: var(--normal-font-seze);
   font-weight: 500;
   margin-right: 50px;
 }
 
-.nav-item a:hover {
+.navigation-bar .nav-item a:hover {
   color: var(--second-color);
+}
+
+
+/* - -HOME- - */
+.Home{
+  position: relative;
+  max-width: 1250px;
+  max-height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 4rem 2rem;
+  flex-direction: column;
+}
+
+.home-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+
+/* ia */
+.home-container .info-home h2{
+  font-size: 2em;
+  font-weight: 600;
+  line-height: 50px;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+}
+
+
+.home-container .info-home h3{
+  color: var(--third-color);
+  font-weight: 600;
+  line-height: 50px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+
+
+.home-container .info-home p{
+  color: var(--third-color);
+  font-size: var(--normal-font-seze);
+  max-width: 350px;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+
+/* --Buat Avatar-- */
+.avatar {
+  margin: auto;
+  width: 200px;
+  display:  block;
+}
+
+/* ABOUT */
+.section .about-section{
+  background-color: #614fd0;
+  color: white;
 }

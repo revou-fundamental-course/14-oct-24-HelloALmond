@@ -22,57 +22,78 @@
 </head>
 <body>
     <!-- --HEADER-- -->
-   
-<header>
+   <!-- foto -->
     <div class="navigation-bar">
         <div class="container">
             <a href="#" class="logo-1"><img src="Asset\img\LOGO.png"></a>
             <div class="navigation">
                 <div class="nav-item">
                     <a href="#Home">Home</a>
-                    <a href="#About">About Me</a>
-                    <a href="#Portfolio">Portfolio</a>
-                    <a href="Service">Service</a>
-                    <a href="#Massage-us">Massage Us</a>
+                    <a href="#About">Profil</a>
+                    <a href="#Portfolio">Menu</a>
+                    <a href="#massage-us">Massage Us</a>
+                    <a href="#" id="hamburger"><i class='bx bx-menu'></i></a>
                 </div>
             </div>
         </div>    
     </div>
-</header>
+
+    <!-- button -->
+     <div class="button">
+        <button id="prev"><</button>
+        <button id="next">></button>
+     </div>
 
      
 <!-- -- HOMEBAGIAN BERANDA/HOME-- -->
+   <section>
+        <div class="slider">
+            <div class="list">
+                <div class="item">
+                    <img src="Asset\Elemen\b (1).jpeg" >
+                </div>
+
+                <div class="item">
+                    <img src="Asset\Elemen\b (2).jpeg" >
+                </div>
+
+                <div class="item">
+                    <img src="Asset\Elemen\b (3).jpeg" >
+                </div>
+            </div>
+        </div>
+   </section>
  <section class="Home" id="Home">
     <div class="home-container">
 
     <!-- --INI KONTEN HOME -- -->
         <div class="info-home">
             <div class="info-home-2">
-            <h3 class="h3_USR">Hi <span name="user">BamBAng</span>, Welcome To Website</h3>
+            <h3 class="h3_USR">Hi <span id="username">user</span>, Welcome To Website</h3>
             </div>
-            <h2>Website Mini Project RevoU</h2>
-            <h3 class="h3-US">I design and code beautifully simple things, and I love what I do.</h3>
+            <h2>Website Mini Project KopiKu</h2>
+            <h3 class="h3-US">RevoU mini project to create KopiKu website</h3>
             <br>
 
-    <!-- --AVATAR-- -->
-            <img class="avatar" src="Asset\img\v11.png">
+    <!-- --AVATAR--
+            <img class="avatar" src="Asset\img\v11.png"> -->
         </div>
     </div>
 </section>
 
 
 <!-- --ABOUT ME-- -->
-<section class="about-section" >
+<section class="about-section" id="About">
     <div class="about-container">
-        <h1>About Me</h1>
+        <h1>Profil</h1>
     </div>
         <div class="row>
             <div class="raw">
-                <div class="about-info" id="About">
-                    <h2>Hi <span name="user">user</span>, We are Almond</h2>
-                    <p class="PAR-1"> Adesign and development team focused on creativity and innovation.
-                    We help your business grow by creating engaging designs and great user experiences. 
-                    We are always ready to listen to your needs and provide the right solution.
+                <div class="about-info" >
+                    <h2> KopiKu</h2>
+                    <p class="PAR-1"> Since 2020, KopiKu has been a home for coffee lovers
+                        . We serve a wide selection of quality coffee, from classic espresso to a wide variety of specialty coffees. With a cozy atmosphere and friendly service, we want to create a space for you to relax, work, or meet up with friends. 
+                        Every brew of our coffee is the result of a careful selection of the finest beans and an unforgettable roasting process.
                     </p>
                 </div>
             </div>
@@ -80,44 +101,104 @@
 </section>
 
 <!-- --PORTFOLIO-- -->
- <section class="Portfolio" id="Portfolio">
-    <div class="p-heading">
-        <h1>My Portfolio</h1>
+ <section class="portfolio" id="Portfolio">
+    <div class="about-container">
+        <h1>MENU</h1>
     </div>
+
+
 <!-- --KONTEN PORTOFOLIO-- -->
-    <div class="Portfolio-container">
+    <div class="portfolio-container">
+
         <div class="porto-img">
-            <img src="Asset\Elemen\V-1.jpg">
+            <img src="Asset/Elemen/AS.jpg">
             <div class="layerp">
-                <h3>Nama Vektor</h3>
-                <p>Deskripsi Vektor. Deskripsi Vektor. Deskripsi Vektor. Deskripsi Vektor. Deskripsi Vektor. Deskripsi Vektor. </p>
-                <a href="#"><i class='bx bx-link-external'></i></a>
+                <h3 class="menu-name">Nama Vektor</h3>
+                <p class="menu-des">harga</p>
             </div>
         </div>
-   
 
-  
         <div class="porto-img">
-            <img src="Asset\Elemen\V-1.jpg">
+            <img src="Asset/Elemen/AS.jpg">
+            <div class="layerp">
+                <h3 class="menu-name">Nama Vektor</h3>
+                <p class="menu-des">harga</p>
+            </div>
         </div>
-    
 
-    
         <div class="porto-img">
-            <img src="Asset\Elemen\V-1.jpg">
+            <img src="Asset/Elemen/AS.jpg">
+            <div class="layerp">
+                <h3 class="menu-name">Nama Vektor</h3>
+                <p class="menu-des">harga</p>
+            </div>
         </div>
-   
 
-    
         <div class="porto-img">
-            <img src="Asset\Elemen\V-1.jpg">
+            <img src="Asset/Elemen/AS.jpg">
+            <div class="layerp">
+                <h3 class="menu-name">Nama Vektor</h3>
+                <p class="menu-des">harga</p>
+            </div>
         </div>
-   
     </div>
+
 
 </section>
 
-
+<section id="massage-us">
+    <h1 class="title">Massage Us</h1>
+    <p class="subtitle">
+      Silahkan hubungi kami melalui form di bawah ini
+    </p>
+    <div class="contact-container">
+      <div class="form-container">
+        <form id="messageForm">
+          <table>
+            <tr>
+              <td><strong>Nama</strong></td>
+              <td>
+                <strong>:</strong><input type="text" name="name" id="name" required>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Tanggal Lahir</strong></td>
+              <td>
+                <strong>:</strong><input type="date" name="dob" id="dob" required>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Jenis Kelamin</strong></td>
+              <td>
+                <strong>:</strong>
+                <input type="radio" name="gender" id="laki-laki" value="Laki-laki" required>
+                <label for="laki-laki">Laki-laki</label>
+                <input type="radio" name="gender" id="perempuan" value="Perempuan" required>
+                <label for="perempuan">Perempuan</label>
+              </td>
+            </tr>
+            <tr>
+              <td><strong>Pesan</strong></td>
+              <td id="textarea">
+                <strong>:</strong><textarea name="message" id="message" cols="30" rows="10" required></textarea>
+              </td>
+            </tr>
+          </table>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="output-container">
+        <h3>Output</h3>
+        <div class="output">
+          <p>Current Time : <span id="currentTime"></span></p>
+          <p>Nama : <span id="outputName"></span></p>
+          <p>Tanggal Lahir : <span id="outputDob"></span></p>
+          <p>Jenis Kelamin : <span id="outputGender"></span></p>
+          <p>Pesan : <span id="outputMessage"></span></p>
+        </div>
+      </div>
+    </div>
+  </section>
 
 <!-- --JS-- -->
  <script src="JS\script.js"></script>
